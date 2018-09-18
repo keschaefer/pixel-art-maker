@@ -18,10 +18,10 @@ let tempColor = document.querySelector(".tempColor");
 
 for (let i = 0; i < colorsAll.length; i++) {
     colorsAll[i].addEventListener ('click', function(e){
-    brush = e.target.id;
-    console.log(e.target.id);
-    tempColor.style.backgroundColor = brush;
-    console.log(e.target);  
+    brush= e.target.id;
+    tempColor.setAttribute('id', brush);
+    console.log(e.target.id); 
+    console.log(tempColor);
     console.log(e);
  })
 }
@@ -29,8 +29,7 @@ for (let i = 0; i < colorsAll.length; i++) {
 let cells = document.querySelectorAll(".cell");
 for (let i = 0; i < cells.length; i++) {
     cells[i].addEventListener('click', function(e){
-        e.target.style.background = brush;
-        console.log(e.target);
-        console.log(e);
+        e.target.style.backgroundColor = tempColor.style.backgroundColor;
+        console.log(tempColor.style.backgroundColor);
     })
 }

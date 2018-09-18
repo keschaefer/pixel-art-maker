@@ -14,22 +14,20 @@ createGrid();
 
 let colorsAll = document.querySelectorAll(".color");
 let brush = ""
-let tempColor = document.querySelector(".tempColor");
+let tempColor= document.querySelector(".tempColor");
 
 for (let i = 0; i < colorsAll.length; i++) {
     colorsAll[i].addEventListener ('click', function(e){
-    brush= e.target.id;
-    tempColor.setAttribute('id', brush);
-    console.log(e.target.id); 
-    console.log(tempColor);
-    console.log(e);
+        brush= e.target.id;
+        tempColor.setAttribute('id', brush);
+        console.log(brush);
+        console.log(tempColor.style);
  })
 }
 
 let cells = document.querySelectorAll(".cell");
 for (let i = 0; i < cells.length; i++) {
     cells[i].addEventListener('click', function(e){
-        e.target.style.backgroundColor = tempColor.style.backgroundColor;
-        console.log(tempColor.style.backgroundColor);
+        e.target.setAttribute('id', brush);
     })
 }

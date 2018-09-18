@@ -1,8 +1,15 @@
 body {
-    height: 100%;
-    width: 80%; 
-    font-family: 'Raleway', sans-serif; 
+    font-family: 'Raleway', sans-serif;
     color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    width: 80%;
+    background-color: rgb(245, 247, 226);
+    background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
 }
 
 header {
@@ -22,16 +29,17 @@ header {
     border: 1px solid #a6a6a6;
 }
 
-
 .palette {
-   display: flex;
-   flex-direction: row; 
-   flex-wrap: wrap;
-   justify-content: space-between;
-   align-items: center;
-   margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: space-between;
+    margin: 10px;
 }
-.color {
+
+.color,
+.tempColor {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -42,8 +50,16 @@ header {
     background-color: red;
 }
 
+#pink {
+    background-color: #E669BA;
+}
+
 #orange {
     background-color: orange;
+}
+
+#peach {
+    background-color: #DF995B;
 }
 
 #yellow {
@@ -54,16 +70,24 @@ header {
     background-color: green;
 }
 
+#lime {
+    background-color: #69D55E;
+}
+
 #blue {
-    background-color: #0066cc;
+    background-color: blue;
+}
+
+#teal {
+    background-color: #4ED8DA;
+}
+
+#periwinkle {
+    background-color: #7065ED;
 }
 
 #purple {
     background-color: purple;
-}
-
-#white {
-    background-color: white;
 }
 
 #brown {
@@ -74,16 +98,21 @@ header {
     background-color: black;
 }
 
-.border {
-    border: 1px solid black;
-    display: flex;
-    flex-direction: row;
-    padding: 4px;
+#grey {
+    background-color: grey;
 }
 
-.tempColor {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 1px solid black;  
+#white {
+    background-color: white;
+}
+
+#backgroundPlain {
+    background-color: rgb(245, 247, 226);
+    background-image: url("https://www.transparenttextures.com/patterns/billie-holiday.png");
+}
+
+.border {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
